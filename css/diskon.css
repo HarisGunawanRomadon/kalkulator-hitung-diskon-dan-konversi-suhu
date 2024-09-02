@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e; /* Warna latar belakang yang terang */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eaeaea; /* Warna teks yang gelap */
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  width: 450px;
+  max-width: 450px; /* Menetapkan lebar maksimum untuk container utama */
+  margin: 0 auto; /* Memposisikan container di tengah halaman secara horizontal */
+  padding: 20px; /* Memberikan ruang di dalam container */
+  background-color: #333; /* Warna latar belakang container yang lebih terang dari body */
+  border-radius: 10px; /* Membuat sudut-sudut container menjadi membulat */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek kedalaman */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ff8c00; /* Warna oranye untuk judul */
+}
+
+form ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+form li {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #eaeaea; /* Warna label yang lebih gelap */
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%; /* Mengatur input agar memenuhi lebar container */
+  padding: 10px; /* Menambah ruang di dalam input */
+  font-size: 1rem; /* Ukuran font pada input */
+  border-radius: 5px; /* Membulatkan sudut input */
+  border: 1px solid #555; /* Warna border input yang kontras */
+  background-color: #444; /* Warna latar belakang input */
+  color: #eaeaea; /* Warna teks pada input */
+}
+
+input[type="number"]::placeholder,
+input[type="text"]::placeholder {
+  color: #999; /* Warna placeholder yang lebih terang */
+}
+
+button {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px; /* Lebar tombol yang lebih kecil agar tidak terlalu besar */
+  margin: 10px auto; /* Memposisikan tombol di tengah secara horizontal */
+  display: block;
+}
+
+button:hover {
+  background-color: #ff7f24; /* Mengubah warna tombol saat di-hover */
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+button.back-button {
+  background-color: #ff4d4d; /* Warna latar belakang merah untuk tombol "Kembali" */
+  color: #fff; /* Warna teks putih untuk kontras dengan latar belakang merah */
+  width: auto; /* Lebar tombol sesuai dengan isi teksnya */
+}
+
+button.back-button:hover {
+  background-color: #ff3333; /* Mengubah warna tombol saat di-hover menjadi merah lebih gelap */
+}
+
+.panel-info {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #2c2c2c; /* Warna latar belakang yang sedikit lebih terang */
+  border: 2px solid rgba(255, 165, 0, 0.3); /* Warna oranye untuk border */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.3); /* Mengubah warna bayangan */
+  color: #fff;
+  animation: fadeIn 0.5s ease-in-out; /* Menambahkan animasi fade-in */
+}
+
+.info-harga,
+.info-diskon,
+.result {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.info-harga:last-child,
+.info-diskon:last-child,
+.result:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .panel-info {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #2c2c2c; /* Warna latar belakang yang sedikit lebih terang */
+    border: 2px solid rgba(255, 165, 0, 0.3); /* Warna oranye untuk border */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.3); /* Mengubah warna bayangan */
+    color: #fff;
+    animation: fadeIn 0.5s ease-in-out; /* Menambahkan animasi fade-in */
+  }
+
+  .info-harga,
+  .info-diskon,
+  .result {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+  }
+
+  .info-harga:last-child,
+  .info-diskon:last-child,
+  .result:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

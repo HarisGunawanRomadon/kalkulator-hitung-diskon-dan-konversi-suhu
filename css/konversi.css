@@ -1,0 +1,189 @@
+/* Reset box-sizing untuk memastikan konsistensi di seluruh elemen */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Padding dan border tidak menambah ukuran total elemen */
+}
+
+/* Gaya umum untuk body halaman */
+body {
+  background-color: #1e1e1e; /* Warna latar belakang gelap untuk tampilan modern */
+  font-family: Arial, Helvetica, sans-serif; /* Font modern */
+  color: #eaeaea; /* Warna teks kontras */
+  line-height: 1.6; /* Jarak antar baris teks untuk keterbacaan */
+  padding: 20px; /* Ruang di sekeliling body */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Memastikan body memenuhi tinggi viewport */
+}
+
+/* Gaya untuk container utama */
+.main-container {
+  width: 450px;
+  max-width: 500px; /* Lebar maksimum container */
+  margin: 0 auto; /* Memposisikan container di tengah secara horizontal */
+  padding: 20px; /* Ruang di dalam container */
+  background-color: #333; /* Warna latar belakang container */
+  border-radius: 10px; /* Membuat sudut container membulat */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+}
+
+/* Gaya untuk judul halaman */
+h1 {
+  margin-bottom: 20px; /* Jarak bawah pada judul */
+  font-size: 2rem; /* Ukuran font besar untuk judul */
+  text-align: center; /* Memposisikan teks judul di tengah */
+  color: #ff8c00; /* Warna teks judul oranye */
+}
+
+/* Gaya untuk daftar dalam form */
+form ul {
+  list-style-type: none; /* Menghapus bullet points dari daftar */
+  padding: 0; /* Menghapus padding dari ul */
+}
+
+/* Gaya untuk item dalam daftar form */
+form li {
+  margin-bottom: 15px; /* Jarak bawah di setiap item daftar */
+}
+
+/* Gaya untuk label */
+label {
+  display: block; /* Menjadikan label sebagai elemen blok */
+  margin-bottom: 10px; /* Jarak bawah pada label */
+  font-weight: 600; /* Ketebalan font pada label */
+  color: #eaeaea; /* Warna teks label */
+}
+
+/* Gaya untuk input dan select */
+input[type="number"],
+input[type="text"],
+select {
+  width: 100%; /* Lebar input memenuhi container */
+  padding: 10px; /* Ruang di dalam input */
+  font-size: 1rem; /* Ukuran font dalam input */
+  border-radius: 5px; /* Membulatkan sudut input */
+  border: 1px solid #555; /* Border input yang kontras */
+  background-color: #444; /* Warna latar belakang input */
+  color: #eaeaea; /* Warna teks pada input */
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2); /* Bayangan di dalam input */
+}
+
+/* Gaya placeholder pada input */
+input[type="number"]::placeholder,
+input[type="text"]::placeholder {
+  color: #999; /* Warna placeholder yang lebih terang */
+}
+
+/* Gaya khusus untuk dropdown (select) */
+select {
+  appearance: none; /* Menghapus gaya default dropdown */
+  background: #444
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23eaeaea"><path d="M7 10l5 5 5-5z"/></svg>')
+    no-repeat right 10px center; /* Menambahkan indikator dropdown */
+  background-size: 12px; /* Ukuran ikon dropdown */
+  padding-right: 40px; /* Memberikan ruang untuk ikon dropdown */
+}
+
+/* Gaya umum untuk tombol */
+button {
+  background-color: #ff8c00; /* Warna latar belakang tombol */
+  color: #eaeaea; /* Warna teks tombol */
+  padding: 12px 20px; /* Padding di sekitar teks tombol */
+  border: none; /* Menghapus border default pada tombol */
+  border-radius: 50px; /* Membuat tombol berbentuk bulat */
+  font-weight: 700; /* Ketebalan font pada tombol */
+  cursor: pointer; /* Menambahkan pointer saat tombol di-hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi warna dan efek transformasi */
+  font-size: 1rem; /* Ukuran font pada tombol */
+  margin: 5px; /* Jarak di sekitar tombol */
+}
+
+/* Gaya link di dalam tombol */
+button a {
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  color: #eaeaea; /* Warna teks link */
+}
+
+/* Gaya tombol saat di-hover */
+button:hover {
+  background-color: #ff7f24; /* Mengubah warna tombol saat di-hover */
+  transform: scale(1.05); /* Menambah efek zoom saat di-hover */
+}
+
+/* Gaya untuk tombol "Kembali" */
+button.back-button {
+  background-color: #ff4d4d; /* Warna latar belakang merah */
+  color: #fff; /* Warna teks putih */
+  width: auto; /* Lebar tombol sesuai dengan isi teksnya */
+}
+
+/* Gaya tombol "Kembali" saat di-hover */
+button.back-button:hover {
+  background-color: #ff3333; /* Warna merah lebih gelap saat di-hover */
+}
+
+/* Gaya untuk container tombol dalam form */
+.form-buttons {
+  display: flex; /* Menggunakan flexbox untuk tata letak tombol */
+  justify-content: center; /* Memposisikan tombol di tengah secara horizontal */
+  gap: 10px; /* Jarak antara tombol */
+}
+
+/* Gaya untuk tombol hapus */
+.clear-button {
+  background-color: #4caf50; /* Warna latar belakang merah */
+  color: #fff; /* Warna teks putih */
+  padding: 12px 20px; /* Padding di sekitar teks tombol */
+  border: none; /* Menghapus border default pada tombol */
+  border-radius: 50px; /* Membuat sudut tombol membulat */
+  font-weight: 700; /* Ketebalan font pada tombol */
+  cursor: pointer; /* Menambahkan pointer saat tombol di-hover */
+  transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+  font-size: 1rem; /* Ukuran font pada tombol */
+  margin: 5px; /* Jarak di sekitar tombol */
+}
+
+/* Gaya tombol hapus saat di-hover */
+.clear-button:hover {
+  background-color: #45a049; /* Mengubah warna saat di-hover */
+}
+
+/* Responsif: Gaya pada layar kecil */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 15px; /* Mengurangi padding pada layar kecil */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Mengurangi ukuran font pada layar kecil */
+  }
+
+  button {
+    width: 100%; /* Membuat tombol memenuhi lebar layar pada perangkat kecil */
+    max-width: none; /* Menghapus batasan lebar maksimum pada perangkat kecil */
+  }
+
+  button a {
+    text-decoration: none; /* Menghapus garis bawah pada link dalam tombol */
+    color: #eaeaea; /* Warna teks link */
+  }
+
+  .clear-button {
+    background-color: #4caf50; /* Warna latar belakang merah */
+    color: #fff; /* Warna teks putih */
+    padding: 12px 20px; /* Padding di sekitar teks tombol */
+    border: none; /* Menghapus border default pada tombol */
+    border-radius: 50px; /* Membuat sudut tombol membulat */
+    font-weight: 700; /* Ketebalan font pada tombol */
+    cursor: pointer; /* Menambahkan pointer saat tombol di-hover */
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+    font-size: 1rem; /* Ukuran font pada tombol */
+    margin: 5px; /* Jarak di sekitar tombol */
+  }
+
+  .clear-button:hover {
+    background-color: #45a049; /* Mengubah warna saat di-hover */
+  }
+}

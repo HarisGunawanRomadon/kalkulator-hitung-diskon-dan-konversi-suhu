@@ -1,0 +1,84 @@
+/* Gaya umum untuk semua elemen */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e; /* Warna latar belakang yang gelap untuk tampilan modern */
+  font-family: Arial, Helvetica, sans-serif; /* Menggunakan font modern */
+  color: #eaeaea; /* Warna teks yang kontras dengan latar belakang */
+  line-height: 1.6; /* Menambah jarak antar baris teks untuk keterbacaan */
+  padding: 20px; /* Memberikan ruang di sekeliling body */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Gaya khusus untuk container utama */
+.main-container {
+  width: 400px;
+  height: 300px;
+  max-width: 600px; /* Menetapkan lebar maksimum untuk container utama */
+  margin: 0 auto; /* Memposisikan container di tengah halaman secara horizontal */
+  padding: 20px; /* Memberikan ruang di dalam container */
+  background-color: #333; /* Warna latar belakang container yang lebih terang dari body */
+  border-radius: 10px; /* Membuat sudut-sudut container menjadi membulat */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek kedalaman */
+}
+
+/* Gaya untuk judul di daftar aplikasi */
+.container-menu h1 {
+  margin-bottom: 30px; /* Menambah jarak bawah pada judul */
+  font-size: 2rem; /* Ukuran font besar untuk judul */
+  text-align: center; /* Memposisikan teks judul di tengah */
+  color: #ff8c00; /* Warna teks judul oranye untuk menarik perhatian */
+}
+
+/* Gaya untuk tombol di daftar aplikasi */
+.button-menu1 {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak tombol */
+  flex-direction: column; /* Menyusun tombol dalam kolom */
+  align-items: center; /* Memposisikan tombol di tengah secara horizontal */
+  gap: 15px; /* Menambahkan jarak antara tombol */
+}
+
+/* Gaya untuk tombol */
+.button-menu1 button {
+  color: #eaeaea; /* Warna teks tombol */
+  padding: 12px 20px; /* Padding yang nyaman di sekitar teks tombol */
+  border: none; /* Menghapus border default pada tombol */
+  border-radius: 30px; /* Membuat tombol berbentuk bulat */
+  font-weight: 700; /* Menambah ketebalan font pada tombol */
+  cursor: pointer; /* Menambahkan pointer saat tombol di-hover */
+  transition: background-color 0.3s ease; /* Menambahkan transisi pada perubahan warna */
+  font-size: 1rem; /* Ukuran font pada tombol */
+  width: 100%; /* Membuat tombol memenuhi lebar container */
+  max-width: 300px; /* Membatasi lebar maksimum tombol */
+  text-align: center; /* Memposisikan teks di tengah tombol */
+}
+
+/* Gaya khusus untuk setiap tombol dengan warna berbeda */
+.button-menu1 .button-kalkulator {
+  background-color: #4caf50; /* Hijau untuk kalkulator */
+}
+
+.button-menu1 .button-diskon {
+  background-color: #2196f3; /* Biru untuk hitung diskon */
+}
+
+.button-menu1 .button-konversi {
+  background-color: #f44336; /* Merah untuk konversi suhu */
+}
+
+/* Gaya hover untuk tombol */
+.button-menu1 button:hover {
+  opacity: 0.8; /* Mengubah opasitas tombol saat di-hover */
+}
+
+.button-menu1 button a {
+  text-decoration: none; /* Menghapus garis bawah pada link dalam tombol */
+  color: inherit; /* Mengambil warna dari elemen induk (tombol) */
+}
